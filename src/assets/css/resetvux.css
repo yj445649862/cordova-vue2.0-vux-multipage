@@ -1,0 +1,309 @@
+/*toast*/
+.weui-tab{
+  height: 100%;
+}
+
+.weui-mask_transparent{
+  z-index: 3000;
+}
+
+.vux-slider, .vux-swiper ,.vux-swiper-item {
+  z-index:1;
+}
+
+.weui-tab .weui-toast{
+  border-radius: 24px;
+  padding: 0.13rem 0.26rem;
+  background: rgba(17,17,17,0.5);
+  z-index: 999999999
+}
+.weui-tab .weui-loading{
+  margin: 0.8rem 0 0;
+}
+.weui-icon_toast{
+   margin-top: 50px;
+}
+.weui-tab .weui-toast__content{
+  font-size: 0.373rem;
+}
+/*toast end*/
+.weui-tab .weui-cells__title{
+  font-size: 0.373rem;
+}
+.weui-tab .weui-tabbar__icon{
+  width:0.48rem;
+  height:0.48rem;
+}
+
+.weui-tab .weui-cell_access{
+  padding:0.267rem 0.4rem;
+}
+.weui-tab .weui-cells {
+  margin-top: 0.267rem;
+  font-size: 0.373rem;
+}
+
+.weui-tab .weui-cell {
+ padding:0.267rem 0.4rem;
+}
+
+.weui-tab .vux-x-switch.weui-cell_switch{
+  padding-top: 0.26rem;
+  padding-bottom: 0.26rem;
+}
+.weui-tab .weui-switch:after,.weui-tab  .weui-switch-cp__box:after{
+  height:0.8rem;
+  width:0.8rem;
+}
+
+.weui-tab .weui-switch:before, .weui-tab  .weui-switch-cp__box:before{
+  height:0.8rem;
+  width:0.8rem
+}
+
+.weui-tab .weui-switch,.weui-tab .weui-switch-cp__box{
+  width: 1.387rem;
+  height: 0.853rem;
+}
+
+.weui-tab .weui-switch:checked:after,.weui-tab .weui-switch-cp__input:checked ~ .weui-switch-cp__box:after{
+  -webkit-transform: translateX(0.53334rem);
+  transform: translateX(0.53334rem);
+}
+/*cell左边边框补全*/
+.weui-tab .weui-cell:before{
+  left:0;
+}
+
+/*input字体*/
+.weui-tab .weui-cells_form .weui-cells  .vux-x-input .weui-cell__primary .weui-input{
+  font-size: 0.373rem;
+}
+
+.weui-tab .weui-cell_access .weui-cell__ft{
+  font-size: 0.373rem;
+}
+
+
+.weui-tab .weui-cell_access .weui-cell__ft:after{
+  height: 0.16rem;
+  width: 0.16rem;
+}
+/*textarea*/
+.weui-tab .weui-cells  .vux-x-textarea .weui-cell__bd textarea{
+    font-size: 0.373rem;
+    color:#666;
+    font-family: "Hiragino Sans GB","Microsoft YaHei","微软雅黑","宋体",Arial,Verdana,sans-serif;
+}
+
+
+.weui-tab .weui-progress__bar{
+  background-color: #f8f8f8
+}
+
+.weui-tab .weui-textarea-counter{
+  font-size: 0.32rem;
+}
+
+.weui-tab .weui-cells  .vux-x-textarea .weui-cell__bd textarea{
+  height: 1.6rem;
+}
+/*cell字体*/
+
+.weui-tab .weui-cells .weui-cell .vux-cell-primary .vux-label{
+  font-size:0.373rem;
+}
+
+/*去掉感叹号start*/
+.weui-tab .weui-btn:after {
+    border: 0
+}
+
+.weui-tab .weui-btn{
+   font-size:0.48rem;;
+}
+.weui-tab .weui-icon-warn:before {
+    content: " "
+}
+
+.weui-tab .weui-cell_warn{
+  color:#757575;
+}
+
+/*去掉感叹号end*/
+
+/*修改导航条颜色与字号*/
+.weui-tab .vux-tab .vux-tab-item.vux-tab-selected{
+  font-size:0.43rem;
+  color:#2696ff;
+  border-bottom:2px solid #2696ff;
+}
+.weui-tab .vux-tab .vux-tab-item{
+  font-size:0.43rem;
+}
+.weui-tab .vux-tab-ink-bar{
+  background-color:#2696ff;
+  height:0.05rem;
+}
+
+.weui-tab .vux-tab{
+  height:1.17rem;
+
+}
+.weui-tab .vux-tab .vux-tab-item{
+  line-height: 1.17rem;
+}
+/*提交免费咨询页面start*/
+.weui-tab .inquiry .weui-cells{
+  padding:0.27rem;
+  margin-top:0;
+}
+
+.weui-tab .inquiry .weui-cells .vux-checker-box .vux-checker-item {
+  font-size:0.373rem;
+}
+
+.weui-tab .inquiry .weui-cell{
+  padding:0;
+}
+/*提交免费咨询页面end*/
+
+
+/*评价医生页面start*/
+.weui-tab .checkWrap .weui-cells{
+  padding:0.27rem;
+}
+
+.weui-tab .textarea .weui-cells:before{
+  border-top:0;
+}
+
+/*评价医生页面end*/
+.weui-tab .weui-cell:before{
+  left:0;
+}
+/* edit paitent*/
+
+.weui-tab .info-area .weui-label{
+  color: #666;
+  font-size: 0.373333rem;
+}
+
+.weui-tab .info-area .vux-label{
+  font-size: 0.373333rem;
+  color: #666;
+}
+.weui-tab .info-area input{
+  font-size: 0.373333rem;
+}
+
+.weui-tab .weui-icon-clear{
+  font-size:0.37334rem;
+}
+
+
+/* 日历插件 */
+.dp-container .dp-header .dp-item {
+  font-size: 0.48rem;
+  height: 1.17334rem;
+  line-height: 1.17334rem;
+}
+
+.dp-container .scroller-component,.vux-popup-picker-container .scroller-component{
+  height: 6.34666rem;
+}
+
+.dp-container .scroller-mask,.vux-popup-picker-container .scroller-mask{
+  background-size: 100% 2.72rem;
+}
+
+.dp-container .scroller-indicator,.vux-popup-picker-container .scroller-indicator {
+  height: 0.90666rem;
+  top: 2.72rem;
+  background-size: 100% 0.02666rem;
+}
+
+.dp-container .scroller-item,.vux-popup-picker-container .scroller-item{
+  font-size: 0.42666rem;
+  height: 0.90666rem;
+  line-height: 0.90666rem;
+}
+
+.vux-popup-picker-container .vux-popup-picker-header-menu{
+  line-height: 0.88667rem;
+  font-size:0.4rem;
+}
+
+.vux-popup-picker-container .vux-popup-picker-header {
+  height:0.88667rem;
+}
+
+/* vuex dialog */
+.vux-x-dialog .weui-dialog{
+  text-align: center;
+  width: 8rem;
+  padding: 20px;
+  border-radius: 0.266667rem;
+}
+
+.vux-x-dialog .weui-dialog h3{
+  text-align: center;
+  font-size: 0.426667rem;
+}
+
+/*dialog*/
+.vux-alert .weui-dialog,.vux-x-dialog .weui-dialog{
+    max-width:8rem;
+}
+.vux-x-dialog .weui-dialog__hd .weui-dialog__title{
+  font-size:0.373rem;
+  color:#666;
+}
+
+.vux-x-dialog .weui-dialog__ft{
+  font-size:0.373rem;
+  line-height: 1.14rem;
+}
+
+.weui-cells_radio .weui-cell{
+    padding: 0.2666rem 0.4rem;
+}
+
+.vux-popup-dialog .weui-cells_radio .weui-check:checked + .weui-icon-checked:before{
+    font-size: 0.42666rem;
+}
+
+.authIndex .vux-tap-active .weui-cell__ft{
+    color: #333;
+}
+.inquiry .vux-no-group-title .weui-cell_access .weui-cell__ft:after{
+    height: 0.3rem;
+    width: 0.3rem;
+}
+
+.inquiry .vux-no-group-title .weui-cell_access .weui-cell__ft:after{
+    margin-top: -0.2rem;
+    right: 0.3rem;
+}
+
+.inquiry .weui-cells .weui-cell_access .weui-cell__ft{
+    padding-right:  0.7rem;
+    padding-bottom: 0.1rem;
+}
+
+.appointmentInfo .weui-cells_checkbox .weui-icon-checked:before{
+  font-size: 0.5rem;
+}
+
+.vux-popup-picker .vux-picker .vux-flexbox .vux-flexbox-item{
+ height:5.6rem;
+
+}
+
+.vux-popup-picker .vux-picker .vux-flexbox .scroller-item{
+  font-size: 0.4rem;
+}
+
+.weui-tab .questions .weui-cells{
+   margin-top:0;
+}

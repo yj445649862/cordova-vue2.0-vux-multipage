@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.ieyecloud.hospitalApp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Battery">
+        <param name="android-package" value="org.apache.cordova.batterystatus.BatteryListener" />
+    </feature>
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Capture">
+        <param name="android-package" value="org.apache.cordova.mediacapture.Capture" />
+    </feature>
+    <feature name="Wechat">
+        <param name="android-package" value="xu.li.cordova.wechat.Wechat" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
+    </feature>
+    <name>爱尔眼科</name>
+    <description>
+        A project about eye health of aier group;
+    </description>
+    <author email="417924273@qq.com" href="">
+        andy
+    </author>
+    <content src="hospital/home/index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <icon density="ldpi" src="res/icon/android/icon-36-ldpi.png" />
+    <icon density="mdpi" src="res/icon/android/icon-48-mdpi.png" />
+    <icon density="hdpi" src="res/icon/android/icon-72-hdpi.png" />
+    <icon density="xhdpi" src="res/icon/android/icon-96-xhdpi.png" />
+    <config-file parent="/*" target="AndroidManifest.xml">
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.CAMERA" />
+    </config-file>
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="WECHATAPPID" value="wx67ad78af04607936" />
+</widget>

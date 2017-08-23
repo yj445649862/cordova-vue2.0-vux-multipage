@@ -1,0 +1,118 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-wechat@2.0.0",
+        "scope": null,
+        "escapedName": "cordova-plugin-wechat",
+        "name": "cordova-plugin-wechat",
+        "rawSpec": "2.0.0",
+        "spec": "2.0.0",
+        "type": "version"
+      },
+      "C:\\Users\\andy\\Desktop\\hospitalServer\\hospital\\node_modules"
+    ]
+  ],
+  "_cnpm_publish_time": 1498961850355,
+  "_from": "cordova-plugin-wechat@2.0.0",
+  "_id": "cordova-plugin-wechat@2.0.0",
+  "_inCache": true,
+  "_location": "/cordova-plugin-wechat",
+  "_nodeVersion": "8.1.3",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-plugin-wechat-2.0.0.tgz_1498961850010_0.6576200474519283"
+  },
+  "_npmUser": {
+    "name": "xu-li",
+    "email": "AthenaLightenedMyPath@gmail.com"
+  },
+  "_npmVersion": "5.0.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-wechat@2.0.0",
+    "scope": null,
+    "escapedName": "cordova-plugin-wechat",
+    "name": "cordova-plugin-wechat",
+    "rawSpec": "2.0.0",
+    "spec": "2.0.0",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/cordova-plugin-wechat/download/cordova-plugin-wechat-2.0.0.tgz",
+  "_shasum": "af24ac74abf3d32ca3729fe46c4b7f981816b2e5",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-wechat@2.0.0",
+  "_where": "C:\\Users\\andy\\Desktop\\hospitalServer\\hospital\\node_modules",
+  "author": {
+    "name": "xu.li",
+    "email": "AthenaLightenedMyPath@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/xu-li/cordova-plugin-wechat/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-wechat",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "dependencies": {},
+  "description": "A cordova plugin, a JS version of Wechat SDK",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "af24ac74abf3d32ca3729fe46c4b7f981816b2e5",
+    "size": 12893325,
+    "noattachment": false,
+    "tarball": "http://registry.npm.taobao.org/cordova-plugin-wechat/download/cordova-plugin-wechat-2.0.0.tgz"
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "2.0.0": {
+        "cordova": ">=6.1.0",
+        "cordova-android": ">=6.1.0",
+        "cordova-ios": ">=4.3.1"
+      },
+      "<2.0.0": {
+        "cordova": ">=3.5.0"
+      }
+    }
+  },
+  "gitHead": "7c464193b851220444ad393b265f9fa38538ef07",
+  "homepage": "https://github.com/xu-li/cordova-plugin-wechat#readme",
+  "keywords": [
+    "cordova",
+    "wechat",
+    "weixin",
+    "share",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "floatinghotpot",
+      "email": "rjfun.mobile@gmail.com"
+    },
+    {
+      "name": "xu-li",
+      "email": "AthenaLightenedMyPath@gmail.com"
+    }
+  ],
+  "name": "cordova-plugin-wechat",
+  "optionalDependencies": {},
+  "publish_time": 1498961850355,
+  "readme": "# cordova-plugin-wechat\n\nA cordova plugin, a JS version of Wechat SDK\n\n# Feature\n\nShare title, description, image, and link to wechat moment(朋友圈)\n\n# Example\n\nSee [cordova-plugin-wechat-example](https://github.com/xu-li/cordova-plugin-wechat-example)\n\n# Install\n\n1. ```cordova plugin add cordova-plugin-wechat  --variable wechatappid=YOUR_WECHAT_APPID```, or using [plugman](https://npmjs.org/package/plugman), [phonegap](https://npmjs.org/package/phonegap), [ionic](http://ionicframework.com/)\n\n2. ```cordova build ios``` or ```cordova build android```\n\n3. (iOS only) if your cordova version <5.1.1,check the URL Type using XCode\n\n# Usage\n\n## Check if wechat is installed\n```Javascript\nWechat.isInstalled(function (installed) {\n    alert(\"Wechat installed: \" + (installed ? \"Yes\" : \"No\"));\n}, function (reason) {\n    alert(\"Failed: \" + reason);\n});\n```\n\n## Authenticate using Wechat\n```Javascript\nvar scope = \"snsapi_userinfo\",\n    state = \"_\" + (+new Date());\nWechat.auth(scope, state, function (response) {\n    // you may use response.code to get the access token.\n    alert(JSON.stringify(response));\n}, function (reason) {\n    alert(\"Failed: \" + reason);\n});\n```\n\n## Share text\n```Javascript\nWechat.share({\n    text: \"This is just a plain string\",\n    scene: Wechat.Scene.TIMELINE   // share to Timeline\n}, function () {\n    alert(\"Success\");\n}, function (reason) {\n    alert(\"Failed: \" + reason);\n});\n```\n\n## Share media(e.g. link, photo, music, video etc)\n```Javascript\nWechat.share({\n    message: {\n        title: \"Hi, there\",\n        description: \"This is description.\",\n        thumb: \"www/img/thumbnail.png\",\n        mediaTagName: \"TEST-TAG-001\",\n        messageExt: \"这是第三方带的测试字段\",\n        messageAction: \"<action>dotalist</action>\",\n        media: \"YOUR_MEDIA_OBJECT_HERE\"\n    },\n    scene: Wechat.Scene.TIMELINE   // share to Timeline\n}, function () {\n    alert(\"Success\");\n}, function (reason) {\n    alert(\"Failed: \" + reason);\n});\n```\n\n### Share link\n```Javascript\nWechat.share({\n    message: {\n        ...\n        media: {\n            type: Wechat.Type.WEBPAGE,\n            webpageUrl: \"http://tech.qq.com/zt2012/tmtdecode/252.htm\"\n        }\n    },\n    scene: Wechat.Scene.TIMELINE   // share to Timeline\n}, function () {\n    alert(\"Success\");\n}, function (reason) {\n    alert(\"Failed: \" + reason);\n});\n```\n\n## Send payment request\n```Javascript\n// See https://github.com/xu-li/cordova-plugin-wechat-example/blob/master/server/payment_demo.php for php demo\nvar params = {\n    partnerid: '10000100', // merchant id\n    prepayid: 'wx201411101639507cbf6ffd8b0779950874', // prepay id\n    noncestr: '1add1a30ac87aa2db72f57a2375d8fec', // nonce\n    timestamp: '1439531364', // timestamp\n    sign: '0CB01533B8C1EF103065174F50BCA001', // signed string\n};\n\nWechat.sendPaymentRequest(params, function () {\n    alert(\"Success\");\n}, function (reason) {\n    alert(\"Failed: \" + reason);\n});\n```\n\n# FAQ\n\nSee [FAQ](https://github.com/xu-li/cordova-plugin-wechat/wiki/FAQ).\n\n# TODO\n\n1. ~~Add android version~~\n\n2. ~~Share to wechat session(聊天) and wechat favorite(收藏)~~\n\n3. ~~Add other media types, including music etc.~~\n\n4. ~~Other APIs~~\n\n5. ~~Android Version update~~\n\n# LICENSE\n\n[MIT LICENSE](http://opensource.org/licenses/MIT)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xu-li/cordova-plugin-wechat.git"
+  },
+  "version": "2.0.0"
+}
